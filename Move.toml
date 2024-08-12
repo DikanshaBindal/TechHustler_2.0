@@ -1,0 +1,11 @@
+[package]
+name = "cctv"
+version = "0.0.0"
+
+[addresses]
+cctv = "0xdc80893e98432b457c85936dead2ad2fbd7b3b40156d3f70acb8993ddc057fb9"
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-core.git"
+subdir = "aptos-move/framework/aptos-framework/"
+rev = "devnet" 
