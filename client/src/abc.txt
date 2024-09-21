@@ -1,0 +1,19 @@
+import { exec } from 'child_process';
+
+// Your TypeScript code here
+console.log('Executing TypeScript code...');
+
+// Run the Python script after a particular line in your TypeScript code
+exec('python3 script.py', (error, stdout, stderr) => {
+    if (error) {
+        console.error(`Error executing script: ${error.message}`);
+        return;
+    }
+    if (stderr) {
+        console.error(`stderr: ${stderr}`);
+        return;
+    }
+    console.log(`stdout: ${stdout}`);
+});
+
+// Continue with the rest of your TypeScript code if needed
